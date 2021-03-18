@@ -7,7 +7,11 @@
    運動を習慣化して健康的な体を手に入れませんか？
     <br><strong>【なりたい自分】</strong>にきっと慣れる！！
    </p>
-   <%= link_to 'sign up', new_user_registration_path, class: "sing-button" %>
+   <% if user_signed_in? %>
+     <%= link_to 'mainpage', new_user_registration_path, class: "sing-button" %>
+   <% else %>
+     <%= link_to 'sign up', new_user_registration_path, class: "sing-button" %>
+   <% end %>
    </section>
 <%# /グラフ部分 %>
  <div class="wrappaer content">  

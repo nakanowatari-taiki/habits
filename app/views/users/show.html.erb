@@ -1,22 +1,19 @@
 <%= render "shared/header" %>
-<div class="mypage">
- <h1 class ="mypage-title">大事なのは日々の積み重ね！！</h1>
-   <h2 class ="mypage-sub-title"><%= @nickname %>さんの頑張りを確認しよう！！</h2>
+<div class="my-pages">
+   <h1 class ="my-page-title"><%= @nickname %> Posts</h1>
    <ul class = "post-list">
     <% @plans.each do |plan| %>
      <li class = "list">
   <div class ="post-info">
-    <h3 class ="user-name">
-      <%= plan.date %>の投稿
-    </h3>
+      <%= plan.date %>
   <div class = "post-date">  
    <%= plan.part.name%>
    </div>
-   <div class ="post-text">
+   <div class ="post-texts">
   <%= plan.text%>
   </div>
-  <%= link_to '編集', edit_plan_path(plan.id), method: :get, class:"main-button"%>
-   <%= link_to '削除', plan_path(plan.id), method: :delete,class:"main-button" %>
+  <%= link_to '編集', edit_plan_path(plan.id), method: :get, class:"my-page-button"%>
+   <%= link_to '削除', plan_path(plan.id), method: :delete,class:"my-page-button" %>
   </li>
  <% end %>
  </ul>

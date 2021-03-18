@@ -321,7 +321,7 @@
 .user-contents{
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: rgb(247, 240, 240);
+  background: linear-gradient(#ffffff,  #ffe5ae);
 }
 .container{
   text-align: center;
@@ -385,6 +385,7 @@
 
 /*メインページ*/
 .name{
+  margin-left: 30px;
   font-family: 'Caveat', cursive;
   font-size: 50px;
 }
@@ -412,6 +413,7 @@
 }
 
 .main-phrase{
+  margin-left: 20px;
   font-family: 'Caveat', cursive;
   font-size: 20px;
 }
@@ -419,20 +421,94 @@
   padding-top: 100px;
   padding-bottom: 100px;
   height: 70vh;
-  background-color: rgb(247, 240, 240);
+  background: linear-gradient(#ffffff,  #ffe5ae);
+  overflow-y: scroll;
 }
 .main-posts{
   font-size: 40px;
   font-family: 'Caveat', cursive;
 
 }
+.post-texts{
+  height: 200px;
+  width: 400px;
+  font-size: 20px;
+  border: black 2px solid;
+}
 
-/*投稿ページ*/
+.post-button{
+  font-family: 'Caveat', cursive;
+  color: black;
+  font-weight: bold;
+  border: solid 2px black ;
+  font-size: 30px;
+  background-color: white;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.post-button:hover{
+  background-color: skyblue;
+  transition: background-color 0.5s;
+}
+.main-posts{
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.user-name {
+  font-size: 3vh;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.com-button{
+  text-decoration: none;
+  color: black;
+}
+.com-button:hover{
+  background-color: skyblue;
+}
+/*メインページここまで*/
+/*メインページ、マイページ部分*/
+.post-list {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+.post-list>.list {
+  width: 37vh;
+}
+.post-info {
+  font-family: 'Caveat', cursive;
+  color: black;
+}
+.post-data {
+  font-size: 1.5vh;
+  display: flex;
+  justify-content: space-between;
+}
+.post-texts {
+  width: 30vh;
+  height: 12vh;
+  position: relative;
+  background-color: white;
+  border: 2px solid black;
+  overflow-y: scroll;
+  padding-left: 10px;
+}
+/*メインページ、マイページ部分ここまで*/
+
+
+/*投稿ページ、編集ページ*/
 .post-page{
   padding-top: 100px;
   padding-bottom: 100px;
   height: 70vh;
-  background-color: rgb(247, 240, 240);
+  background: linear-gradient(#ffffff,  #ffe5ae);
 }
 .pos{
   display: flex;
@@ -472,35 +548,118 @@
   background-color: skyblue;
   transition: background-color 0.5s;
 }
-.post-texts{
-  height: 200px;
-  width: 400px;
-  font-size: 20px;
-  border: black 2px solid;
-}
 
-.post-button{
-  font-family: 'Caveat', cursive;
-  color: black;
-  font-weight: bold;
-  border: solid 2px black ;
-  font-size: 30px;
-  background-color: white;
-  font-weight: bold;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.post-button:hover{
-  background-color: skyblue;
-  transition: background-color 0.5s;
-}
-/*投稿ページ*/
+/*投稿ページ、編集ページここまで*/
 
+/*フラッシュメッセージ*/
 .flash-message{
   margin: auto;
   background-color: skyblue;
-  height: 40px;
-  width: 150px;
-  padding: auto;
+  height: 26px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Caveat', cursive;
 }
+/*マイページ*/
+.my-pages{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 70vh;
+  background: linear-gradient(#ffffff,  #ffe5ae);
+  overflow-y: scroll;
+}
+.my-page-title{
+  font-family: 'Caveat', cursive;
+  text-align: center;
+  font-size: 60px;
+}
+.my-page-button{
+  text-decoration: none;
+  color: black;
+}
+.my-page-button:hover{
+  background-color: skyblue;
+  transition: background-color 0.5s;
+}
+/*マイページここまで*/
+
+/*編集ページ*/
+
+/*コメントページ*/
+.main-comments{
+  padding-top: 100px;
+  background: linear-gradient(#ffffff,  #ffe5ae);
+}
+.com-title{
+  font-family: 'Caveat', cursive;
+  font-size: 60px;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+.sub-com-title{
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.com-main{
+  list-style: none;
+  margin-left: 20px;
+}
+.comments-data{
+  font-size: 20px;
+}
+.comments-text{
+  width: 30vh;
+  height: 12vh;
+  background-color: white;
+  border: 2px solid black;
+  overflow-y: scroll;
+  padding-left: 10px;
+}
+
+.coms-button{
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+  width: 100px;
+  height: 50px;
+  border: 2px solid black;
+  background-color: white;
+  color:black;
+  display: block;
+}
+.com{
+ margin-top: 0;
+ height: 7vh;
+ width: 30vh;
+ background-color: white;
+ border: 2px solid black;
+ overflow-y: scroll;
+ font-size: 20px;
+}
+
+
+ .coms-button:hover{
+   background-color: skyblue;
+   transition: background-color 0.5s;
+ }
+
+ .com-table{
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+ }
+
+ .comments{
+   color: black;
+   overflow-y: scroll;;
+   height: 300px;
+ }
+
+ .com-plan{
+   font-size: 20px;
+   padding-left: 10px;
+   color: black;
+ }
+ 

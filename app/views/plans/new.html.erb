@@ -4,7 +4,6 @@
     <h3 class = "post-menu">fitness_menu</h3>
     <P class = "habits">本日のトレーニングの内容、トレーニングの情報をPostしよう！</p>
   </div>
-
   <div class ="post-form">
     <%= form_with(model: @plan, local: true) do |f| %>
   <p class="post-text">Days</p>
@@ -13,8 +12,6 @@
     <%= f.collection_select(:part_id, Part.all, :id, :name, {}, {class:"genre-select"}) %>
    <p class="post-text">Posts</p>
     <%= f.text_area :text, placeholder: "例 腹筋30回ets...", rows: "6",class:"post-texts" %>
-
-
     <%= f.submit 'Posts!', class: "post-button" %>
    </div>
 </div>
