@@ -4,6 +4,9 @@
     <h3 class = "post-menu">fitness_menu</h3>
     <P class = "habits">本日のトレーニングの内容、トレーニングの情報をPostしよう！</p>
   </div>
+  <% if flash[:danger]%>
+  <h3 class = "flash-message"><%= flash[:danger]%></h3>
+  <% end %>
   <div class ="post-form">
     <%= form_with(model: @plan, local: true) do |f| %>
   <p class="post-text">Days</p>

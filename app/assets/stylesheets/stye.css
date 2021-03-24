@@ -53,7 +53,7 @@
 /*トップページ*/
 .main {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 0;
 }
 
 .home-hero{
@@ -292,6 +292,35 @@
   padding-bottom: 30px;
 }
 /*肥満ここまで*/
+/*サービスイメージ部分*/
+.service{
+  height: 500px;
+  background: url('service.png')no-repeat center right / 55vw auto;
+  padding: 5.5rem 1rem 3rem;
+}
+.service h2{
+  margin:40px ;
+  background: rgba(255,255,255,.8);
+  padding: 1rem;
+  display: inline-block;
+}
+
+@media (min-width: 600px){
+  .service{
+    padding: 16vw 1rem;
+  }
+  .service h2{
+    font-size: 3rem;
+    margin: 0 0 2rem;
+    background: none;
+    padding: 0;
+  }
+  .service p{
+    width: 38vw;
+  }
+}
+
+
 /*フッター部分*/
 .footer {
   height: 10vh;

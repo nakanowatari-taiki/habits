@@ -13,9 +13,10 @@ class PlansController < ApplicationController
   def create
     @plan = Plan.new(plan_params)
     if @plan.save
-       redirect_to action: :index
-       flash[:notice] = "投稿しました"
+      redirect_to action: :index
+      flash[:notice] = "投稿しました"
     else
+      flash[:danger] = "空欄があります。投稿できません。"
       render :new
     end
   end
