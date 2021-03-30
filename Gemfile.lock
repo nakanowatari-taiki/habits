@@ -13,6 +13,7 @@ GEM
       activesupport (= 6.0.3.6)
       mail (>= 2.7.1)
     actionmailer (6.0.3.6)
+      actionpack (= 6.0.3.6)
       actionview (= 6.0.3.6)
       activejob (= 6.0.3.6)
       mail (~> 2.5, >= 2.5.4)
