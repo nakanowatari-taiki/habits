@@ -57,7 +57,7 @@
 }
 
 .home-hero{
-  background: url('main.jpg')no-repeat center right/ 70vw auto;
+  background-image: image-url('main.jpg')no-repeat center right/ 70vw auto;
   padding: 5.5rem 1rem 3rem;
   margin: 40px 10px ;
 }
