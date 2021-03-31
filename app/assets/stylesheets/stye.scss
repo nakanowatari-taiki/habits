@@ -57,7 +57,7 @@
 }
 
 .home-hero{
-  background-image: image-url('main.jpg')no-repeat center right/ 70vw auto;
+  background: image-url('main.jpg')no-repeat center right / 70vw auto;
   padding: 5.5rem 1rem 3rem;
   margin: 40px 10px ;
 }
@@ -186,7 +186,7 @@
 /*グラフ関係ここまで*/
 /*サブタイトル*/
 .home-sub{
-  background: url('main-sub.jpg')no-repeat center right / 70vw auto;
+  background: image-url('main-sub.jpg')no-repeat center right / 70vw auto;
   padding: 5.5rem 1rem 3rem; 
   margin: 40px 10px ;
 }
@@ -295,7 +295,7 @@
 /*サービスイメージ部分*/
 .service{
   height: 500px;
-  background: url('service.png')no-repeat center right / 55vw auto;
+  background: image-url('service.png')no-repeat center right / 55vw auto;
   padding: 5.5rem 1rem 3rem;
 }
 .service h2{
